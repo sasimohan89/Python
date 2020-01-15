@@ -10,3 +10,6 @@
 # math functions
 print(round(3.1))
 
+#constants
+PI = 3.14
+
