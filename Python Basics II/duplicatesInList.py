@@ -1,4 +1,4 @@
-# Find duplicates and print em in a list
+# Find duplicates and print em
 
 some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 
