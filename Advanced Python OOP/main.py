@@ -1,12 +1,18 @@
-class SuperList(list):
-    def __len__(self):
-        return 1000
+# Method resolution order MRO
+class A:
+    def process(self):
+        print('A process()')
 
 
-super_list1 = SuperList()
+class B:
+    pass
 
-print(len(super_list1))
-super_list1.append(5)
-print(super_list1[0])
-print(issubclass(SuperList, list))
-print(issubclass(list, object))
+
+class C(A, B):
+    pass
+
+
+obj = C()
+obj.process()
+print(C.mro())   # print MRO for class C
+print(C.__mro__)    # alternative MRO print
